@@ -34,7 +34,7 @@ function initialiseState() {
     console.warn('Push messaging isn\'t supported.');  
     return;  
   }else{
-    console.log('push msg not supported');
+    console.log('push msg supported');
   }
 
   // We need the service worker registration to check for a subscription  
@@ -49,6 +49,7 @@ function initialiseState() {
 
         if (!subscription) {  
           // We aren't subscribed to push, so set UI  
+          consolelog("sub");
           // to allow the user to enable push  
           return;  
         }
