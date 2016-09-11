@@ -15,6 +15,8 @@ function initialiseState() {
   if (!('showNotification' in ServiceWorkerRegistration.prototype)) {  
     console.warn('Notifications aren\'t supported.');  
     return;  
+  }else{
+    console.log('supported');
   }
 
   // Check the current Notification permission.  
@@ -23,12 +25,16 @@ function initialiseState() {
   if (Notification.permission === 'denied') {  
     console.warn('The user has blocked notifications.');  
     return;  
+  }else{
+    console.log('not denied');
   }
 
   // Check if push messaging is supported  
   if (!('PushManager' in window)) {  
     console.warn('Push messaging isn\'t supported.');  
     return;  
+  }else{
+    console.log('push msg not supported');
   }
 
   // We need the service worker registration to check for a subscription  
