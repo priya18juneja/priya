@@ -36,7 +36,7 @@ function initialiseState() {
   }else{
     console.log('push msg supported');
   }
-
+alert('hi');
   // We need the service worker registration to check for a subscription  
   navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) { 
     alert('subscrpt');
