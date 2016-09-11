@@ -49,9 +49,11 @@ function initialiseState() {
 
         if (!subscription) {  
           // We aren't subscribed to push, so set UI  
-          consolelog("sub");
+          console.log("sub");
           // to allow the user to enable push  
           return;  
+        }else{
+          console.log("sd0");
         }
 
         // Keep your server in sync with the latest subscriptionId
