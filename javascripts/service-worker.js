@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
 }
 
 function initialiseState() {  
-  alert("initialise0");
+  alert("initialise");
   // Are Notifications supported in the service worker?  
   if (!('showNotification' in ServiceWorkerRegistration.prototype)) {  
     console.warn('Notifications aren\'t supported.');  
