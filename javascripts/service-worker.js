@@ -22,6 +22,7 @@
   }  
 });
 function initialiseState() {  
+  alert("initialise0");
   // Are Notifications supported in the service worker?  
   if (!('showNotification' in ServiceWorkerRegistration.prototype)) {  
     console.warn('Notifications aren\'t supported.');  
