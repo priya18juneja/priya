@@ -38,7 +38,8 @@ function initialiseState() {
   }
 
   // We need the service worker registration to check for a subscription  
-  navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) {  
+  navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) { 
+    alert('subscrpt');
     // Do we already have a push message subscription?  
     serviceWorkerRegistration.pushManager.getSubscription()  
       .then(function(subscription) {  
